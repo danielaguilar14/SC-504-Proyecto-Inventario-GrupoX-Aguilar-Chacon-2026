@@ -8,18 +8,18 @@ Información General
 Curso: SC-504 Lenguajes de Bases de Datos
 
 Profesor
+Ana Cecilia Araya Cooper
 
 Integrantes
+Joshua Ignacio Calderón Barahona
+Jose Daniel Aguilar Aguilar
+
 
 Año
-
+2026
 
 Tecnologías utilizadas
-
 Oracle 19c
-
 SQL Developer
-
 Java (NetBeans)
-
 GitHub
