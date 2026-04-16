@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import oracle.jdbc.OracleTypes;
 
 public class InventarioDAO {
@@ -29,7 +30,7 @@ public class InventarioDAO {
 
         } catch (Exception e) {
             System.out.println("Error al insertar inventario:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -57,7 +58,7 @@ public class InventarioDAO {
 
         } catch (Exception e) {
             System.out.println("Error al listar inventario:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
 
         return lista;
@@ -81,7 +82,7 @@ public class InventarioDAO {
 
         } catch (Exception e) {
             System.out.println("Error al actualizar inventario:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -99,7 +100,7 @@ public class InventarioDAO {
 
         } catch (Exception e) {
             System.out.println("Error al eliminar inventario:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 }

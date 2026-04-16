@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import oracle.jdbc.OracleTypes;
 
 public class MovimientoDAO {
@@ -28,7 +29,7 @@ public class MovimientoDAO {
 
         } catch (Exception e) {
             System.out.println("Error al insertar movimiento:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -56,7 +57,7 @@ public class MovimientoDAO {
 
         } catch (Exception e) {
             System.out.println("Error al listar movimientos:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
 
         return lista;
@@ -80,7 +81,7 @@ public class MovimientoDAO {
 
         } catch (Exception e) {
             System.out.println("Error al actualizar movimiento:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -98,7 +99,7 @@ public class MovimientoDAO {
 
         } catch (Exception e) {
             System.out.println("Error al eliminar movimiento:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 }

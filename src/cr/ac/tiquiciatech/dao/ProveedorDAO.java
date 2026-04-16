@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import oracle.jdbc.OracleTypes;
 
 public class ProveedorDAO {
@@ -30,7 +31,7 @@ public class ProveedorDAO {
 
         } catch (Exception e) {
             System.out.println("Error al insertar proveedor:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -59,7 +60,7 @@ public class ProveedorDAO {
 
         } catch (Exception e) {
             System.out.println("Error al listar proveedores:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
 
         return lista;
@@ -85,7 +86,7 @@ public class ProveedorDAO {
 
         } catch (Exception e) {
             System.out.println("Error al actualizar proveedor:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -103,7 +104,7 @@ public class ProveedorDAO {
 
         } catch (Exception e) {
             System.out.println("Error al eliminar proveedor:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 }

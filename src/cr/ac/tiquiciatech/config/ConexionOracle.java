@@ -8,7 +8,6 @@ public class ConexionOracle {
 
     private static final String USER = "TIQUICIATECH";
     private static final String PASSWORD = "123456789Proyecto";
-
     private static final String URL =
         "jdbc:oracle:thin:@lenguajebasedatos_medium?TNS_ADMIN=C:/Users/Joshua/Documents/Universidad/LENGUAJE_BD";
 
@@ -18,7 +17,6 @@ public class ConexionOracle {
         } catch (ClassNotFoundException e) {
             throw new SQLException("No se encontró el driver JDBC de Oracle.", e);
         }
-
         Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
         conn.setAutoCommit(false);
         return conn;

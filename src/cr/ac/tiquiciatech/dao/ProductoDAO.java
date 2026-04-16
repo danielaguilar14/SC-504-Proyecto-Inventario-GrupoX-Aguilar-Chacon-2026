@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import oracle.jdbc.OracleTypes;
 
 public class ProductoDAO {
@@ -32,7 +33,7 @@ public class ProductoDAO {
 
         } catch (Exception e) {
             System.out.println("Error al insertar producto:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -64,7 +65,7 @@ public class ProductoDAO {
 
         } catch (Exception e) {
             System.out.println("Error al listar productos:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
 
         return lista;
@@ -92,7 +93,7 @@ public class ProductoDAO {
 
         } catch (Exception e) {
             System.out.println("Error al actualizar producto:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -110,7 +111,7 @@ public class ProductoDAO {
 
         } catch (Exception e) {
             System.out.println("Error al eliminar producto:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 }

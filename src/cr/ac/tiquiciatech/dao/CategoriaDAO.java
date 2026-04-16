@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import oracle.jdbc.OracleTypes;
 
 public class CategoriaDAO {
@@ -28,7 +29,7 @@ public class CategoriaDAO {
 
         } catch (Exception e) {
             System.out.println("Error al insertar categoría:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -55,7 +56,7 @@ public class CategoriaDAO {
 
         } catch (Exception e) {
             System.out.println("Error al listar categorías:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
 
         return lista;
@@ -79,7 +80,7 @@ public class CategoriaDAO {
 
         } catch (Exception e) {
             System.out.println("Error al actualizar categoría:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -97,7 +98,7 @@ public class CategoriaDAO {
 
         } catch (Exception e) {
             System.out.println("Error al eliminar categoría:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 }

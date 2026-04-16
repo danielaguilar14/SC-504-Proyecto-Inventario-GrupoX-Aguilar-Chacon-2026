@@ -4,17 +4,14 @@
  */
 package tiquiciatechinventario;
 
-/**
- *
- * @author Joshua
- */
-public class TiquiciaTechInventario {
+import cr.ac.tiquiciatech.ui.MainFrame;
+import javax.swing.SwingUtilities;
 
-    /**
-     * @param args the command line arguments
-     */
+public class TiquiciaTechInventario {
     public static void main(String[] args) {
-        // TODO code application logic here
+        SwingUtilities.invokeLater(() -> {
+            MainFrame frame = new MainFrame();
+            frame.setVisible(true);
+        });
     }
-    
 }

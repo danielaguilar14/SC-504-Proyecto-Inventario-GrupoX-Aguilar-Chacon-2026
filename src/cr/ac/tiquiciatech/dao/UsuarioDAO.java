@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import oracle.jdbc.OracleTypes;
 
 public class UsuarioDAO {
@@ -30,7 +31,7 @@ public class UsuarioDAO {
 
         } catch (Exception e) {
             System.out.println("Error al insertar usuario:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -60,7 +61,7 @@ public class UsuarioDAO {
 
         } catch (Exception e) {
             System.out.println("Error al listar usuarios:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
 
         return lista;
@@ -86,7 +87,7 @@ public class UsuarioDAO {
 
         } catch (Exception e) {
             System.out.println("Error al actualizar usuario:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 
@@ -104,7 +105,7 @@ public class UsuarioDAO {
 
         } catch (Exception e) {
             System.out.println("Error al eliminar usuario:");
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 }
